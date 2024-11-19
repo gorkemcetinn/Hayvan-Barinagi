@@ -1,0 +1,433 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Bölümü */
+#hero {
+    text-align: center;
+    background-color: #FFA726;
+    padding: 50px 20px;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    background: #66BB6A;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Hizmetler Bölümü */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+}
+
+.service-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* İstatistik Bölümü */
+#stats {
+    background: #FFF3E0;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.stats-card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Çağrı Bölümü */
+#cta {
+    text-align: center;
+    padding: 50px 20px;
+    background: #FFCC80;
+    color: #fff;
+}
+
+#cta .button {
+    background: #FF7043;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Sahiplenme Sayfası */
+#adopt {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+
+#adopt h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.dog-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dog-card img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.dog-info {
+    max-width: 400px;
+    text-align: left;
+}
+
+.dog-info h3 {
+    font-size: 1.5em;
+    color: #FF7043;
+}
+
+.dog-info p {
+    font-size: 1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.button {
+    background: #FF7043;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #FF5722;
+}
+
+/* Bağış Yap Sayfası */
+#donate {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+#donate h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#donate p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.button {
+    background: #FF7043;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #FF5722;
+}
+
+/* Hakkımızda Sayfası */
+#about {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+    text-align: center;
+    flex: 1;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #FF7043;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Kart Stili */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #FF7043;
+}
+
+.card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* İletişim Sayfası */
+#contact {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+    text-align: center;
+    flex: 1;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+}
+
+.contact-info h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF7043;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    color: #333;
+    margin: 5px 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #FF7043;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button {
+    background: #FF7043;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #FF5722;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
